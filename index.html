@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="EduLearn - Your Gateway to Quality Education" />
+    <title>EduLearn - Home</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- ===== TOP ANNOUNCEMENT BAR ===== -->
+    <div class="top-bar">
+        <div class="container">
+            <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+            <span><i class="fas fa-envelope"></i> info@edulearn.com</span>
+            <span><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</span>
+        </div>
+    </div>
+
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-graduation-cap"></i>
+                    Edu<span>Learn</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="login.html" class="nav-link btn-nav">Login</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <div class="hero-text">
+                <span class="hero-badge">Welcome to EduLearn</span>
+                <h1>Unlock Your <span>Potential</span> With Quality Education</h1>
+                <p>Join thousands of students learning from industry experts. Start your journey toward a brighter future today.</p>
+                <div class="hero-buttons">
+                    <a href="courses.html" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Explore Courses
+                    </a>
+                    <a href="about.html" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <h3>10K+</h3>
+                        <p>Students</p>
+                    </div>
+                    <div>
+                        <h3>200+</h3>
+                        <p>Courses</p>
+                    </div>
+                    <div>
+                        <h3>50+</h3>
+                        <p>Instructors</p>
+                    </div>
+                    <div>
+                        <h3>95%</h3>
+                        <p>Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-bg.jpg" alt="Learning Illustration" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES SECTION ===== -->
+    <section class="features section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2>Our <span>Features</span></h2>
+                <p>We provide the best learning experience with our unique features</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry professionals with years of experience in their fields.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Practical Learning</h3>
+                    <p>Hands-on projects and real-world examples to reinforce your learning.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certification</h3>
+                    <p>Earn recognized certificates upon course completion to boost your career.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Support</h3>
+                    <p>Join a vibrant community of learners and get support whenever you need it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== POPULAR COURSES SECTION ===== -->
+    <section class="popular-courses section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Courses</span>
+                <h2>Most <span>Popular</span> Courses</h2>
+                <p>Explore our most enrolled courses and start learning today</p>
+            </div>
+            <div class="courses-grid" id="popularCourses">
+                <!-- Courses will be loaded dynamically via JavaScript -->
+            </div>
+            <div class="text-center">
+                <a href="courses.html" class="btn btn-primary">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2>What Our <span>Students</span> Say</h2>
+            </div>
+            <div class="testimonials-slider" id="testimonialSlider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"EduLearn completely transformed my career. The courses are well-structured and the instructors are amazing!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/team1.jpg" alt="Student" />
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <span>Web Developer</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- More testimonials will be added via JavaScript -->
+            </div>
+            <div class="slider-controls">
+                <button id="prevTestimonial"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextTestimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Learning Journey?</h2>
+                <p>Join EduLearn today and get access to world-class education from anywhere in the world.</p>
+                <a href="login.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-user-plus"></i> Get Started Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-graduation-cap"></i>
+                            Edu<span>Learn</span>
+                        </a>
+                    </div>
+                    <p>Empowering learners worldwide with quality education and practical skills for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Popular Courses</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Python Programming</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get the latest updates and offers.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your Email" required />
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EduLearn. All Rights Reserved. | Made with <i class="fas fa-heart"></i> for education</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
